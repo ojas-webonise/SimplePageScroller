@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <ScrollView xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!--     android:id="@+id/cmpgnFlipScrollView" -->
+<!--     android:layout_width="match_parent" -->
+<!--     android:layout_height="wrap_content" -->
+<!--     android:scrollbars="none" > -->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/howItWorksButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:clipChildren="true" >
+
+        <ImageView
+            android:id="@+id/flipperImgOne"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:src="@drawable/cause_profile" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/flipperImgOne"
+            android:layout_alignRight="@id/flipperImgOne"
+            android:layout_alignTop="@id/flipperImgOne"
+            android:background="@color/black_shadow_dark" >
+
+            <TextView
+                android:id="@+id/myCmpgnNameOne"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:typeface="sans" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/flipperImgTwo"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/flipperImgOne"
+            android:scaleType="fitXY"
+            android:src="@drawable/cause_profile" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/flipperImgTwo"
+            android:layout_alignRight="@id/flipperImgTwo"
+            android:layout_alignTop="@id/flipperImgTwo"
+            android:layout_toRightOf="@id/flipperImgOne"
+            android:background="@color/black_shadow_dark" >
+
+            <TextView
+                android:id="@+id/myCmpgnNameTwo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:typeface="sans" />
+        </LinearLayout>
+    </RelativeLayout>
+
+<!-- </ScrollView> -->

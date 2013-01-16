@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:keepScreenOn="true" >
+
+    <com.example.simplepagescroller.GalleryCustom
+        android:id="@+id/galleryView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:spacing="60dip" />
+
+    <LinearLayout
+        android:id="@+id/pagingIndicatorLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal|bottom"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</LinearLayout>
