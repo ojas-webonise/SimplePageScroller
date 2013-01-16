@@ -1,0 +1,4 @@
+SimplePageScroller
+==================
+
+Gallery with paging
